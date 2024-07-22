@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "dummy-server"
+version = "0.1.0"
+description = ""
+authors = ["Park, Jonghyeon <belline0124@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "dummy_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^3.0.3"
+flask-restful = "^0.3.10"
+python-dotenv = "^1.0.1"
+pillow = "^10.4.0"
+
+[tool.poetry.scripts]
+
+[tool.poetry.group.dev.dependencies]
+flasgger = "^0.9.7.1"
+marshmallow = "^3.21.3"
+apispec = "^6.6.1"
+pytest = "^8.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
