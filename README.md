@@ -1,3 +1,8 @@
+## Getting Started
+
+### Install Requirements
+- Poetry: [Install Documentation](https://python-poetry.org/docs/)
+
 ### Install Dependencies
 ```sh
 poetry install
@@ -12,3 +17,6 @@ poetry run flask run
 ```sh
 poetry run pytest
 ```
+
+### Open Auto-generated API Documentation
+Visit http://localhost:5000/apidocs after run server.
