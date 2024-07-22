@@ -3,7 +3,7 @@ on:
   - push
 
 jobs:
-  ci:
+  test:
     strategy:
       fail-fast: false
       matrix:
@@ -19,6 +19,6 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Run test
-        run: >
+        run: |
           poetry install
           poetry run pytest -v
