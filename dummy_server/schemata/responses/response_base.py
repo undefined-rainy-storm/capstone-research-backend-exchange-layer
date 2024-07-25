@@ -1,7 +1,7 @@
 from flasgger import Schema, fields, validate
 from dataclasses import dataclass
 from marshmallow.validate import Equal, OneOf
-from .response_enum import ResponseState, OperationFailCode
+from ...entities.responses.response_enum import ResponseState, OperationFailCode
 
 @dataclass
 class Response:

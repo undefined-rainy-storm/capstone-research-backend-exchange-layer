@@ -2,9 +2,9 @@ from flask import request, make_response
 from flasgger import SwaggerView
 
 from . import api_bp
-from ...entities.requests.recognize import RecognizeRequest
+from ...schemata.requests.recognize import RecognizeRequest
 from ...entities.responses.response_enum import ResponseState
-from ...entities.responses.response_base import Response, ResponseOnSuccessSchema, ResponseOnFailedSchema
+from ...schemata.responses.response_base import Response, ResponseOnSuccessSchema, ResponseOnFailedSchema
 from ...controllers.recognize import RecognizeController
 
 class RecognizeApiView(SwaggerView):
